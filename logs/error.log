@@ -1,0 +1,402 @@
+2020-09-26 15:25:24 Error: [Cake\View\Exception\MissingTemplateException] Template file `Articles\view.php` could not be found.
+
+The following paths were searched:
+
+- `F:\Server\www\GIT\cakephp-project\templates\Articles\view.php`
+- `F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\templates\Articles\view.php`
+ in Articles\view.php on line 1354
+Exception Attributes: array (
+  'file' => 'Articles\\view.php',
+  'paths' => 
+  array (
+    0 => 'F:\\Server\\www\\GIT\\cakephp-project\\templates\\',
+    1 => 'F:\\Server\\www\\GIT\\cakephp-project\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:761
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:696
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:538
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /articles/view/first-post
+Referer URL: http://localhost:8765/articles/index
+
+
+2020-09-26 15:53:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Test' for key 'slug' in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:39
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php:178
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php:74
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Database\Connection.php:341
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:70
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Database\Connection.php:344
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Database\Query.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\ORM\Table.php:2042
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\ORM\Table.php:1934
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\ORM\Table.php:1835
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\ORM\Table.php:1535
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Database\Connection.php:691
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\ORM\Table.php:1536
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\ORM\Table.php:1836
+- F:\Server\www\GIT\cakephp-project\src\Controller\ArticlesController.php:39
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:529
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /articles/add
+Referer URL: http://localhost:8765/articles/add
+
+
+2020-09-28 15:56:27 Error: [ParseError] syntax error, unexpected '}', expecting end of file in F:\Server\www\GIT\cakephp-project\src\Controller\AppController.php on line 56
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\composer\ClassLoader.php:322
+- spl_autoload_call - [internal], line ??- F:\Server\www\GIT\cakephp-project\src\Controller\ArticlesController.php:6
+- F:\Server\www\GIT\cakephp-project\vendor\composer\ClassLoader.php:444
+- F:\Server\www\GIT\cakephp-project\vendor\composer\ClassLoader.php:322
+- spl_autoload_call - [internal], line ??- class_exists - [internal], line ??- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Core\App.php:161
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Core\App.php:67
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:146
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:44
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /articles
+Referer URL: http://localhost:8765/articles
+
+
+2020-09-28 15:57:18 Error: [Cake\View\Exception\MissingTemplateException] Template file `Users\login.php` could not be found.
+
+The following paths were searched:
+
+- `F:\Server\www\GIT\cakephp-project\templates\Users\login.php`
+- `F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\templates\Users\login.php`
+ in Users\login.php on line 1354
+Exception Attributes: array (
+  'file' => 'Users\\login.php',
+  'paths' => 
+  array (
+    0 => 'F:\\Server\\www\\GIT\\cakephp-project\\templates\\',
+    1 => 'F:\\Server\\www\\GIT\\cakephp-project\\vendor\\cakephp\\cakephp\\templates\\',
+  ),
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:761
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:696
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:538
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /users/login?redirect=%2Farticles
+Referer URL: http://localhost:8765/articles
+
+
+2020-09-28 16:05:58 Error: [Error] Call to a member function isValid() on null in F:\Server\www\GIT\cakephp-project\src\Controller\UsersController.php on line 27
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:529
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /users/login?redirect=%2Farticles
+Referer URL: http://localhost:8765/users/login?redirect=%2Farticles
+
+
+2020-09-28 16:12:49 Error: [Error] Call to a member function identifiers() on null in F:\Server\www\GIT\cakephp-project\src\Controller\UsersController.php on line 35
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:529
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /users/login?redirect=%2Farticles
+Referer URL: http://localhost:8765/users/login?redirect=%2Farticles
+
+
+2020-09-28 16:12:49 Warning: Warning (512): Unable to emit headers. Headers sent in file=F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Debugger.php line=954 in [F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /users/login?redirect=%2Farticles
+Referer URL: http://localhost:8765/users/login?redirect=%2Farticles
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 130
+[main] - ROOT\webroot\index.php, line 40
+
+2020-09-28 16:12:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Debugger.php:954) in [F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /users/login?redirect=%2Farticles
+Referer URL: http://localhost:8765/users/login?redirect=%2Farticles
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 130
+[main] - ROOT\webroot\index.php, line 40
+
+2020-09-28 16:12:49 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Debugger.php:954) in [F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /users/login?redirect=%2Farticles
+Referer URL: http://localhost:8765/users/login?redirect=%2Farticles
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 130
+[main] - ROOT\webroot\index.php, line 40
+
+2020-09-28 16:12:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Debugger.php:954) in [F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /users/login?redirect=%2Farticles
+Referer URL: http://localhost:8765/users/login?redirect=%2Farticles
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 130
+[main] - ROOT\webroot\index.php, line 40
+
+2020-09-28 16:13:46 Error: [Cake\Http\Exception\MissingControllerException] Controller class Logout could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Logout',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /logout/
+
+
+2020-09-28 16:14:15 Error: [Cake\Http\Exception\MissingControllerException] Controller class Home could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Home',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /home
+Referer URL: http://localhost:8765/users/login
+
+
+2020-09-28 17:01:36 Error: [Error] Call to a member function find() on null in F:\Server\www\GIT\cakephp-project\src\Controller\HomeController.php on line 20
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:529
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fhome
+
+
+2020-09-28 17:01:36 Warning: Warning (512): Unable to emit headers. Headers sent in file=F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Debugger.php line=954 in [F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 71]
+Request URL: /home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fhome
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 71
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 130
+[main] - ROOT\webroot\index.php, line 40
+
+2020-09-28 17:01:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Debugger.php:954) in [F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 168]
+Request URL: /home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fhome
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 168
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 74
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 130
+[main] - ROOT\webroot\index.php, line 40
+
+2020-09-28 17:01:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Debugger.php:954) in [F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fhome
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 130
+[main] - ROOT\webroot\index.php, line 40
+
+2020-09-28 17:01:36 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Debugger.php:954) in [F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 197]
+Request URL: /home
+Referer URL: http://localhost:8765/users/login?redirect=%2Fhome
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 188
+DebugKit\Plugin::DebugKit\{closure}() - ROOT\vendor\cakephp\debug_kit\src\Plugin.php, line 105
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 197
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 75
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 130
+[main] - ROOT\webroot\index.php, line 40
+
