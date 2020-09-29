@@ -12,6 +12,8 @@ class UsersController extends AppController
 
         $this->loadComponent('Paginator');
         $this->loadComponent('Flash'); // Include the FlashComponent
+        $this->loadComponent('Csrf');
+
     }
 
 public function beforeFilter(\Cake\Event\EventInterface $event)

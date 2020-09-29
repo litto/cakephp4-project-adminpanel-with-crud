@@ -956,3 +956,740 @@ Stack trace:
 #30 C:\wamp64\www\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(App\Application))
 #31 C:\wamp64\www\cakephp-project\webroot\index.php(40): Cake\Http\Server->run()
 #32 {main}
+2020-09-29 17:19:35 Error: [Error] Call to undefined function base_url() in F:\Server\www\GIT\cakephp-project\templates\Users\login.php on line 25
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:1176
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:1134
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:764
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:696
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:538
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /users/login?redirect=%2F
+
+
+2020-09-29 17:21:47 Error: [Error] Call to undefined function base_url() in F:\Server\www\GIT\cakephp-project\templates\Users\login.php on line 50
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:1176
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:1134
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:764
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:696
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:538
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /users/login?redirect=%2F
+
+
+2020-09-29 17:28:46 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:28:50 Error: [Cake\Http\Exception\MissingControllerException] Controller class Admin_theme could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Admin_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /admin_theme/img/mybg.png
+Referer URL: http://localhost:8765/admin_theme/oldcss/smartadmin-production.min.css
+
+
+2020-09-29 17:31:11 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:31:13 Error: [Cake\Http\Exception\MissingControllerException] Controller class Admin_theme could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Admin_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /admin_theme/img/mybg.png
+Referer URL: http://localhost:8765/admin_theme/oldcss/smartadmin-production.min.css
+
+
+2020-09-29 17:31:45 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:31:46 Error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /img/admin_theme/oldimg/avatars/logo1.png
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:31:47 Error: [Cake\Http\Exception\MissingControllerException] Controller class Admin_theme could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Admin_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /admin_theme/img/mybg.png
+Referer URL: http://localhost:8765/admin_theme/oldcss/smartadmin-production.min.css
+
+
+2020-09-29 17:31:59 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:32:45 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:32:46 Error: [Cake\Http\Exception\MissingControllerException] Controller class Admin_theme could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Admin_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /admin_theme/img/mybg.png
+Referer URL: http://localhost:8765/admin_theme/oldcss/smartadmin-production.min.css
+
+
+2020-09-29 17:35:11 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token from either the request body or request headers did not match or is missing. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php on line 311
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:152
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /login/
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:35:13 Error: [Cake\Http\Exception\InvalidCsrfTokenException] CSRF token from either the request body or request headers did not match or is missing. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php on line 311
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:152
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:164
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /login/
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:35:22 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:35:22 Error: [Cake\Http\Exception\MissingControllerException] Controller class Admin_theme could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Admin_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /admin_theme/img/mybg.png
+Referer URL: http://localhost:8765/admin_theme/oldcss/smartadmin-production.min.css
+
+
+2020-09-29 17:53:22 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:53:23 Error: [Cake\Http\Exception\MissingControllerException] Controller class Admin_theme could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Admin_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /admin_theme/img/mybg.png
+Referer URL: http://localhost:8765/admin_theme/oldcss/smartadmin-production.min.css
+
+
+2020-09-29 17:53:35 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:54:44 Error: [Cake\Http\Exception\MissingControllerException] Controller class Css could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /css/admin_theme/oldcss/smartadmin-skins.min.css
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+
+
+2020-09-29 17:54:44 Error: [Cake\Http\Exception\MissingControllerException] Controller class Admin_theme could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Admin_theme',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:46
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /admin_theme/img/mybg.png
+Referer URL: http://localhost:8765/admin_theme/oldcss/smartadmin-production.min.css
+
+
+2020-09-29 18:13:34 Error: [BadMethodCallException] Method "param()" does not exist in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\ServerRequest.php on line 450
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\templates\Users\login.php:23
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:1176
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:1134
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\View\View.php:764
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:696
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:538
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:79
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:251
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /users/login?redirect=%2F
+
+
+2020-09-29 18:16:05 Error: [Cake\Controller\Exception\MissingComponentException] Component class CsrfComponent could not be found. in F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ComponentRegistry.php on line 111
+Exception Attributes: array (
+  'class' => 'CsrfComponent',
+  'plugin' => NULL,
+)
+Stack Trace:
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php:102
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:286
+- F:\Server\www\GIT\cakephp-project\src\Controller\UsersController.php:15
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\Controller.php:213
+- ReflectionClass::newInstance() - [internal], line ??- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php:56
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\BaseApplication.php:249
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:77
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php:156
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php:159
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php:166
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php:122
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php:68
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php:121
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php:60
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:73
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Runner.php:58
+- F:\Server\www\GIT\cakephp-project\vendor\cakephp\cakephp\src\Http\Server.php:90
+- F:\Server\www\GIT\cakephp-project\webroot\index.php:40
+
+Request URL: /users/login?redirect=%2F
+
+
