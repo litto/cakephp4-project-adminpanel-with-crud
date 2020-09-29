@@ -22,7 +22,9 @@ public function beforeFilter(\Cake\Event\EventInterface $event)
 }
 
     public function login()
-{
+{      
+    $this->viewBuilder()->setLayout('adminlayout');
+
     $result = $this->Authentication->getResult();
 
 	if ($this->request->is('post') && !$result->isValid()) {
