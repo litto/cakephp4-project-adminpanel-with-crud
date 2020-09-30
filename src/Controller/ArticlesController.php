@@ -15,6 +15,7 @@ class ArticlesController extends AppController
     }
 	    public function index()
     {
+        $this->viewBuilder()->setLayout('admin_main_layout');
         $this->loadComponent('Paginator');
         $articles = $this->Paginator->paginate($this->Articles->find());
         $this->set(compact('articles'));
@@ -28,6 +29,8 @@ class ArticlesController extends AppController
 
 public function add()
     {
+                $this->viewBuilder()->setLayout('admin_main_layout');
+
         $article = $this->Articles->newEmptyEntity();
         if ($this->request->is('post')) {
             $article = $this->Articles->patchEntity($article, $this->request->getData());
@@ -35,6 +38,21 @@ public function add()
             // Hardcoding the user_id is temporary, and will be removed later
             // when we build authentication out.
             $article->user_id = 1;
+
+$attachment = $this->request->getData('txtFile');
+if($attachment){
+$imagename = $attachment->getClientFilename();
+$type = $attachment->getClientMediaType();
+$size = $attachment->getSize();
+$tmpName = $attachment->getStream()->getMetadata('uri');
+$error = $attachment->getError();
+$targetPath = WWW_ROOT.$imagename;
+$attachment->moveTo($targetPath);
+}else{
+    $imagename='demo.jpg';
+}
+
+$article->image=$imagename;
 
             if ($this->Articles->save($article)) {
                 $this->Flash->success(__('Your article has been saved.'));
