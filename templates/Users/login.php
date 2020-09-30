@@ -16,9 +16,9 @@
 <div id="main" role="main">
 
       <!-- MAIN CONTENT -->
-    <?php // echo $this->Form->create();  ?>
+    <?php  echo $this->Form->create(NULL, array('type' => 'post','class'=>'lockscreen animated flipInY'));  ?>
 
-      <form class="lockscreen animated flipInY" method="post" enctype="multipart/form-data" action="">
+     <!--  <form class="lockscreen animated flipInY" method="post" enctype="multipart/form-data" action=""> -->
       
         <div class="logo">
           <h1 class="semi-bold"><!-- <img src="oldimg/logo-o.png" alt="" />  --><span style="color:#4FACE5">Admin</span>Panel</h1>

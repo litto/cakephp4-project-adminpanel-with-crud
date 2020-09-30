@@ -24,6 +24,9 @@
 use Cake\Routing\Route\DashedRoute;
 use Cake\Routing\RouteBuilder;
 
+
+define("BASE_URL", "http://localhost:8765");
+
 /*
  * The default class to use for all routes
  *

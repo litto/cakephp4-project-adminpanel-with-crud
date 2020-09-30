@@ -12,7 +12,6 @@ class UsersController extends AppController
 
         $this->loadComponent('Paginator');
         $this->loadComponent('Flash'); // Include the FlashComponent
-        $this->loadComponent('Csrf');
 
     }
 
