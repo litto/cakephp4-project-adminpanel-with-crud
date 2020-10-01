@@ -1,0 +1,2 @@
+username:cakephp@example.com
+password:secret

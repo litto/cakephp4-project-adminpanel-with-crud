@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Sep 29, 2020 at 04:10 AM
+-- Generation Time: Oct 01, 2020 at 08:15 AM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.12
 
@@ -35,21 +35,24 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `title` varchar(255) NOT NULL,
   `slug` varchar(191) NOT NULL,
   `body` text,
+  `image` varchar(500) NOT NULL,
   `published` tinyint(1) DEFAULT '0',
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `slug` (`slug`),
   KEY `user_key` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `articles`
 --
 
-INSERT INTO `articles` (`id`, `user_id`, `title`, `slug`, `body`, `published`, `created`, `modified`) VALUES
-(1, 1, 'First Post1', 'first-post', 'This is the first post.', 1, '2020-09-26 18:47:35', '2020-09-26 15:54:42'),
-(3, 1, 'Raj', 'Raj', 'Raj', 0, '2020-09-26 15:53:34', '2020-09-26 15:53:34');
+INSERT INTO `articles` (`id`, `user_id`, `title`, `slug`, `body`, `image`, `published`, `created`, `modified`) VALUES
+(1, 1, 'Dubai Article', 'first-post', '<p>This is the first post.s</p>\r\n<p>s</p>', 'category_5ec1f88d746267-15703624-47861638.jpg', 1, '2020-09-26 18:47:35', '2020-10-01 07:35:44'),
+(3, 1, 'Rajeee 23455', 'Raj', '<p>Rajs</p>\r\n<p>s</p>\r\n<p>s</p>', 'category_5ec220815cb486-71292690-72585004.jpg', 1, '2020-09-26 15:53:34', '2020-10-01 08:09:24'),
+(5, 1, 'Testing system', 'Testing-system', '<p>testtt</p>', 'category_5ec1f73e8b93c1-78216411-78234014.jpg', 1, '2020-10-01 06:52:53', '2020-10-01 08:09:46'),
+(6, 1, 'Mutual Testing', 'Mutual-Testing', '<p>Mutual Testing</p>', 'category_5ec1f73e8b93c1-78216411-78234014.jpg', 1, '2020-10-01 06:53:46', '2020-10-01 08:10:28');
 
 -- --------------------------------------------------------
 

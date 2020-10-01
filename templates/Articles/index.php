@@ -52,7 +52,7 @@
                                             <div class="widget-main">
                         <form class="form-search" method="post" enctype="multipart/form-data" action="<?php echo  $this->Common->get_url('auth/cms/list');?>">
                                                     <div class="row">
-                                                        <div class="col-xs-12 col-sm-7">
+                                                        <div class="col-xs-12 col-sm-9">
                                                             <div class="input-group">
                                                                 <input type="text" name="keyword" class="form-control search-query" placeholder="Type your query" />
                                                                 <span class="input-group-btn">
@@ -63,7 +63,7 @@
                                                                 </span>
                                                             </div>
                                                             </div>
-<div class="col-xs-12 col-sm-5">
+<div class="col-xs-12 col-sm-3">
                                 <a class="btn btn-app btn-primary btn-xs radius-4" href="<?php echo  $this->Common->get_url('/articles/add');?>">
                                             <i class="ace-icon fa fa-pencil-square-o bigger-160"></i>
 
@@ -72,42 +72,7 @@
                                             
                                             </span>
                                         </a>
-                                                <button class="btn btn-app btn-warning btn-xs radius-4"  type="submit" name="updateOrder" value="submitted">
-                                            <i class="ace-icon fa fa-eye bigger-160"></i>
-
-                                            Set Order
-                                            <span class="badge badge-transparent">
-                                            
-                                            </span>
-                                        </button>
-
-
-                                        <button class="btn btn-app btn-success btn-xs radius-4"  value="submitted" type="submit" name="publish">
-                                            <i class="ace-icon fa fa-eye bigger-160"></i>
-
-                                            Publish
-                                            <span class="badge badge-transparent">
-                                            
-                                            </span>
-                                        </button>
-                                        
-                                        <button class="btn btn-app btn-warning btn-xs radius-4" value="submitted" type="submit" name="unpublish">
-                                            <i class="ace-icon fa fa-eye-slash bigger-160"></i>
-
-                                            Unpublish
-                                            <span class="badge badge-transparent">
-                                            
-                                            </span>
-                                        </button>
-                                        
-                                        <button class="btn btn-app btn-danger btn-xs radius-4" value="submitted" type="submit" name="delete">
-                                            <i class="ace-icon fa fa-trash-o bigger-160"></i>
-
-                                            Delete
-                                            <span class="badge badge-transparent">
-                                                
-                                            </span>
-                                        </button>
+                         
 
 
                                                     </div>      
@@ -147,6 +112,7 @@
                                                     </label>
                                                 </th>
                                                 <th>Title </th>
+                                                 <th>Image </th>
                                             <th>Date</th>
 
                                             
@@ -161,8 +127,10 @@
 
                                             for($i=0;$i<count($records);$i++){ 
 $id=$records[$i]['id'];
+
+$image=$records[$i]['image'];  
                                              ?>
-                                            <tr>
+                                          <tr>
                                                 <td class="center">
                                                     <label class="position-relative">
                                                         <input type="checkbox" class="ace" name="chkId<?php echo $i;?>" id="chkId<?php echo $i;?>" value="<?php echo $records[$i]['id'];?>"  />
@@ -177,7 +145,10 @@ $id=$records[$i]['id'];
                                             <td class="hidden-480"><?php echo $records[$i]["created"];?>)
             </td>
 
+                                   <td class="hidden-480">
 
+                                    <img src="<?php echo  $this->Common->get_url('/uploads/'.$image);?>" height="100px" width="100px" />
+            </td>
                                             
                                                 <td class="hidden-480">
                                                 
@@ -193,20 +164,21 @@ $id=$records[$i]['id'];
                                                 <td>
                                                     <div class="hidden-sm hidden-xs btn-group">
                                                         
-                                                        <a class="btn btn-xs btn-info" href="<?php echo  $this->Common->get_url('auth/cms/edit/'.$id);?>; ?>">
+                                                        <a class="btn btn-xs btn-info" href="<?php echo  $this->Common->get_url('/articles/edit/'.$id);?>">
                                                             <i class="ace-icon fa fa-pencil bigger-120"></i>
                                                         </a>
-                                                        <button class="btn btn-xs btn-success" id="id-btn-publish<?php echo $records[$i]['id']; ?>">
+                                                        <a class="btn btn-xs btn-success" href="<?php echo  $this->Common->get_url('/articles/publish/'.$id);?>" >
                                                             <i class="ace-icon fa fa-check bigger-120"></i>
-                                                        </button>
-                                      <button class="btn btn-xs btn-warning" id="id-btn-unpublish<?php echo $records[$i]['id']; ?>">
+                                                        </a>
+                                      
+                                      <a class="btn btn-xs btn-warning" href="<?php echo  $this->Common->get_url('/articles/unpublish/'.$id);?>">
                                                             <i class="ace-icon fa  fa-eye-slash bigger-120"></i>
-                                                        </button>
+                                                        </a>
                                             
 
-                                                        <button class="btn btn-xs btn-danger"  id="id-btn-dialog<?php echo $records[$i]['id']; ?>">
+                                                        <a class="btn btn-xs btn-danger"  href="<?php echo  $this->Common->get_url('/articles/delete/'.$id);?>">
                                                             <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                        </button>
+                                                        </a>
 
                                             
                                                     </div>
@@ -229,27 +201,27 @@ $id=$records[$i]['id'];
                                                                 </li>
 
                                                                 <li>
-                                                                    <button class="tooltip-error" data-rel="tooltip" title="Delete" id="id-btn-dialog<?php echo $records[$i]['id']; ?>">
+                                                                    <a class="tooltip-error" data-rel="tooltip" title="Delete" href="<?php echo  $this->Common->get_url('/articles/delete/'.$id);?>">
                                                                         <span class="red">
                                                                             <i class="ace-icon fa fa-trash-o bigger-120"></i>
                                                                         </span>
-                                                                    </button>
+                                                                    </a>
                                                                 </li>
 
                                                                         <li>
-                                                                    <button  class="tooltip-success" data-rel="tooltip" title="Publish" id="id-btn-publish<?php echo $records[$i]['id']; ?>">
+                                                                    <a  class="tooltip-success" data-rel="tooltip" title="Publish" href="<?php echo  $this->Common->get_url('/articles/publish/'.$id);?>">
                                                                         <span class="green">
                                                                             <i class="ace-icon fa fa-check bigger-120"></i>
                                                                         </span>
-                                                                    </button>
+                                                                    </a>
                                                                 </li>
 
                                                                                     <li>
-                                                                    <button class="tooltip-success" data-rel="tooltip" title="Unpublish" id="id-btn-unpublish<?php echo $records[$i]['id']; ?>">
+                                                                    <a class="tooltip-success" data-rel="tooltip" title="Unpublish" href="<?php echo  $this->Common->get_url('/articles/unpublish/'.$id);?>">
                                                                         <span class="green">
                                                                             <i class="ace-icon fa fa-eye-slash bigger-120"></i>
                                                                         </span>
-                                                                    </button>
+                                                                    </a>
                                                                 </li>
 
 

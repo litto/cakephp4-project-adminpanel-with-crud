@@ -46,13 +46,15 @@ $type = $attachment->getClientMediaType();
 $size = $attachment->getSize();
 $tmpName = $attachment->getStream()->getMetadata('uri');
 $error = $attachment->getError();
-$targetPath = WWW_ROOT.$imagename;
+$targetPath= WWW_ROOT.'uploads'.DS.$imagename;
 $attachment->moveTo($targetPath);
+
 }else{
     $imagename='demo.jpg';
 }
 
 $article->image=$imagename;
+
 
             if ($this->Articles->save($article)) {
                 $this->Flash->success(__('Your article has been saved.'));
@@ -65,13 +67,35 @@ $article->image=$imagename;
 
     public function edit($slug)
 {
+
+$this->viewBuilder()->setLayout('admin_main_layout');
+
     $article = $this->Articles
-        ->findBySlug($slug)
+        ->findById($slug)
         ->firstOrFail();
 
     if ($this->request->is(['post', 'put'])) {
         $this->Articles->patchEntity($article, $this->request->getData());
+
+
         if ($this->Articles->save($article)) {
+
+$attachment = $this->request->getData('txtFile');
+if($attachment){
+
+$imagename = $attachment->getClientFilename();
+$type = $attachment->getClientMediaType();
+$size = $attachment->getSize();
+$tmpName = $attachment->getStream()->getMetadata('uri');
+$error = $attachment->getError();
+$targetPath= WWW_ROOT.'uploads'.DS.$imagename;
+$attachment->moveTo($targetPath);
+$article->image=$imagename;
+$this->Articles->save($article);
+
+}
+
+
             $this->Flash->success(__('Your article has been updated.'));
             return $this->redirect(['action' => 'index']);
         }
@@ -81,16 +105,52 @@ $article->image=$imagename;
     $this->set('article', $article);
 }
 
+
+
+
 public function delete($slug)
 {
-    $this->request->allowMethod(['post', 'delete']);
+    $this->request->allowMethod(['post', 'delete','get']);
 
-    $article = $this->Articles->findBySlug($slug)->firstOrFail();
+    $article = $this->Articles->findById($slug)->firstOrFail();
     if ($this->Articles->delete($article)) {
         $this->Flash->success(__('The {0} article has been deleted.', $article->title));
         return $this->redirect(['action' => 'index']);
     }
 }
+
+
+public function publish($slug)
+{
+    $this->request->allowMethod(['post','get']);
+
+    $article = $this->Articles->findById($slug)->firstOrFail();
+    
+    $article->published=1;
+
+    if ($this->Articles->save($article)) {
+
+        $this->Flash->success(__('The {0} article has been published.', $article->title));
+        return $this->redirect(['action' => 'index']);
+    }
+}
+
+public function unpublish($slug)
+{
+    $this->request->allowMethod(['post','get']);
+
+    $article = $this->Articles->findById($slug)->firstOrFail();
+    
+    $article->published=0;
+
+    if ($this->Articles->save($article)) {
+
+        $this->Flash->success(__('The {0} article has been unpublished.', $article->title));
+        return $this->redirect(['action' => 'index']);
+    }
+}
+
+
 
 
 }
