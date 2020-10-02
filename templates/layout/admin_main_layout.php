@@ -1339,7 +1339,7 @@ $currentpage="home"
 
                         <ul class="submenu">
             <li <?php if($currentpage=='addadminuser' ){  ?> class="active" <?php } ?> >
-                                <a href="<?php echo \Cake\Routing\Router::url(); ?>/auth/create_user">
+                                <a href="">
                                             <i class="menu-icon fa fa-plus"></i>
                             Add
                                 </a>
@@ -1348,7 +1348,7 @@ $currentpage="home"
                             </li>
 
                                             <li <?php if($currentpage=='adminusers' || $currentpage=='editadminuser' ){  ?> class="active" <?php } ?>>
-                                <a href="<?php echo \Cake\Routing\Router::url(); ?>/auth/user_list">
+                                <a href="">
                                             <i class="menu-icon fa fa-list"></i>
                                 List
                                 </a>
@@ -1435,6 +1435,8 @@ $this->start('footer');
 
 
 <?php $this->end(); ?>
+
+
 
 <?php  echo $this->fetch('mainheader');  ?>
     <body class="skin-1">
